@@ -27,7 +27,7 @@ export async function POST(request: Request) {
     }
 
     const stripe = new Stripe(secretKey, {
-      apiVersion: '2024-09-30.acacia',
+      apiVersion: '2025-10-29.clover',
     });
 
     const origin = request.headers.get('origin') || process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
