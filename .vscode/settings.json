@@ -1,0 +1,7 @@
+{
+  // 抑制 IDE 的 CSS 语法服务对 Tailwind v4 自定义 at-rule（如 @theme、@apply）的误报
+  "css.lint.unknownAtRules": "ignore",
+  // 如使用 SCSS/LESS，也一并忽略未知 at-rule（可选）
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore"
+}

@@ -1,0 +1,207 @@
+{
+  "brand": {
+    "nameCn": "Zhihang",
+    "nameEn": "Axiomate"
+  },
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "language": "Language",
+    "zh": "中文",
+    "en": "English",
+    "pricing": "Pricing",
+    "useCases": "Use Cases",
+    "testimonials": "Testimonials",
+    "signin": "Sign in"
+  },
+  "home": {
+    "heroTitle": "Your all-in-one AI assistant across leading models",
+    "heroSubtitle": "Access frontier models (e.g., GPT‑4o family, Claude 3.5/3.7, Gemini 2.5, Llama 3.1, Mistral Large, DeepSeek‑V3), with custom roles and knowledge-base chat to boost writing, research, and decision-making.",
+    "heroNote": "Available on web, desktop, and mobile. Free tier, no credit card required.",
+    "ctaStart": "Start for free",
+    "ctaFeatures": "Explore features",
+    "sections": {
+      "featuresTitle": "Powerful AI features",
+      "features": [
+        "Multi-model engine: smart routing or manual switching, balancing quality and cost",
+        "Custom AI roles: scenario templates, parameter presets, and memory",
+        "Knowledge-base chat: connect docs & web sources, answers with citations",
+        "Code & docs assistant: optimization, reviews, and auto-generated docs",
+        "Multi-platform: Browser extension (placeholder), Web, macOS, Windows, iOS, Android"
+      ],
+      "advantagesTitle": "Our advantages",
+      "advantages": [
+        "Speed & efficiency: shorten research and writing cycles",
+        "Privacy & security: enterprise-grade options (on demand)",
+        "Easy integrations: third-party data & workflows (roadmap)",
+        "Delightful UX: clean design, fast onboarding, team-friendly"
+      ],
+      "bottomCtaTitle": "Start your AI acceleration now",
+      "bottomCtaStart": "Try for free",
+      "bottomCtaContact": "Contact us"
+    }
+  },
+  "features": {
+    "title": "Feature overview",
+    "description": "Bring multi-model, custom roles, and knowledge-base chat into one streamlined workspace.",
+    "multiModel": {
+      "title": "Multi-model engine",
+      "items": [
+        "Access frontier models (e.g., GPT‑4o family, Claude 3.5/3.7, Gemini 2.5, Llama 3.1, Mistral Large, DeepSeek‑V3) with smart routing or manual switching",
+        "Configurable outputs: length, style, tone, citations",
+        "Prompt management: save and reuse high-performing prompts",
+        "Note: Actual models and capabilities depend on integrations and licensing"
+      ]
+    },
+    "roles": {
+      "title": "Custom AI roles",
+      "items": [
+        "Scenario templates (writing, research, analysis, interviews, code review)",
+        "Presets for tone, format, audience; memory for multi-turn conversations",
+        "Team role library for shared workflows"
+      ]
+    },
+    "kb": {
+      "title": "Knowledge-base chat",
+      "items": [
+        "Connect documents (PDF/Doc), web pages, and data sources",
+        "Semantic retrieval with citations for traceable answers",
+        "File limits vary by plan and system configuration"
+      ]
+    },
+    "code": {
+      "title": "Code & docs assistant",
+      "items": [
+        "Code optimization, reviews, refactoring, and test generation",
+        "Auto-generated API/technical docs with embedded examples"
+      ]
+    },
+    "content": {
+      "title": "Content & research",
+      "items": [
+        "Structured writing, literature reviews, auto summaries, citations",
+        "Bilingual output and localization support"
+      ]
+    },
+    "platforms": {
+      "title": "Platforms & extensions",
+      "items": [
+        "Browser extension (placeholder, on roadmap), full access on web/desktop/mobile",
+        "Global shortcuts and sidebar availability"
+      ]
+    },
+    "security": {
+      "title": "Security & admin",
+      "items": [
+        "Roles/permissions and audit logs (roadmap)",
+        "Compliance controls and data retention (enterprise)"
+      ]
+    },
+    "free": {
+      "title": "Free tier",
+      "items": [
+        "Start free — no credit card required",
+        "Access leading models with smart routing",
+        "Generous daily limits for chat and knowledge-base",
+        "Import docs, export results, keep your data private",
+        "Cancel anytime; upgrade only when it makes sense"
+      ]
+    },
+    "ctaStart": "Start for free",
+    "ctaContact": "Contact us"
+  },
+  "footer": {
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "faq": "FAQ",
+    "cookies": "Cookie policy",
+    "contact": "Contact",
+    "note": "Model availability and features depend on actual integrations."
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Transparent pricing. Start free — no credit card",
+    "tagline": "Flexible plans focused on frontier models and productivity. Upgrade only when it makes sense",
+    "feature1": "Access to base and frontier models (subject to integrations)",
+    "feature2": "Generous daily limits with fair queueing",
+    "feature3": "Standard document size and upload limits",
+    "feature4": "Knowledge-base and custom roles (plan-based limits)",
+    "cta": "Get started",
+    "tiers": ["Free", "Pro"],
+    "billing": {
+      "label": "Billing",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "yearlySave": "Save with annual billing"
+    },
+    "recommended": "Recommended",
+    "success": {
+      "title": "Payment successful",
+      "subtitle": "Thank you for your purchase. Your subscription is being activated.",
+      "backHome": "Back to home"
+    },
+    "cancel": {
+      "title": "Payment canceled",
+      "subtitle": "You can resume checkout anytime.",
+      "backHome": "Back to home"
+    },
+    "free": {
+      "priceMonthly": "Free",
+      "priceYearly": "Free",
+      "features": [
+        "20 conversations per day (fair queueing)",
+        "Access to base models (subject to integrations)",
+        "Document uploads: up to 5 files, each ≤ 10MB",
+        "Knowledge-base retrieval: 10/day",
+        "Cancel anytime; upgrade as needed"
+      ]
+    },
+    "pro": {
+      "priceMonthly": "$19.9/mo",
+      "priceYearly": "$199/year (~$16.6/mo)",
+      "features": [
+        "60 conversations per day (~1,800/month)",
+        "Priority access to frontier models and higher quotas",
+        "Document uploads: up to 100 files, each ≤ 25MB; 2GB storage cap",
+        "Knowledge-base retrieval: 50/day",
+        "Higher limits for custom roles and knowledge-base"
+      ]
+    }
+  },
+  "useCases": {
+    "title": "Use Cases",
+    "subtitle": "Real scenarios across professional workflows",
+    "desc": "Use roles and knowledge-base chat to deliver high-quality outputs fast.",
+    "items": [
+      "Strategic planning",
+      "Business analysis",
+      "Management decisions",
+      "Research & writing",
+      "Code & documentation",
+      "Marketing & content creation",
+      "Sales & customer management"
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "items": [
+      {"quote": "Cut our weekly reporting and research time in half. Team satisfaction went up significantly.", "name": "Product Manager"},
+      {"quote": "Faster code reviews and documentation. Delivery cycles are noticeably shorter.", "name": "CTO"},
+      {"quote": "Knowledge-base search with citations makes our reports more reliable and standardized.", "name": "Researcher"}
+    ]
+  }
+  ,
+  "auth": {
+    "signin": {
+      "title": "Welcome to {brand}",
+      "subtitle": "The new way to build software",
+      "google": "Continue with Google",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Your email address",
+      "continue": "Continue",
+      "noAccount": "Don’t have an account?",
+      "signup": "Sign up",
+      "emailDisabled": "Email sign-in is not enabled yet. Please use Google sign-in."
+    }
+  }
+}
