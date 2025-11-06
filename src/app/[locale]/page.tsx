@@ -9,17 +9,17 @@ export default function HomePage() {
   const m = useMessages() as any;
   const sections = m?.home?.sections || {};
   const featuresList: string[] = sections?.features || [
-    '多模型引擎：智能路由或手动切换，兼顾准确性与成本',
-    '自定义 AI 角色：场景模板、参数预设与记忆',
-    '知识库聊天：连接文档与网页，答案含引用',
-    '代码与文档助手：优化、审查与自动生成文档',
-    '多平台：Web/桌面/移动端'
+    'Multi-model engine: smart routing or manual switching',
+    'Custom AI roles: scenario templates, presets, and memory',
+    'Knowledge-base chat: connect docs & web, answers with citations',
+    'Code & docs assistant: optimization, reviews, auto docs',
+    'Multi-platform: Web/desktop/mobile'
   ];
   const advantagesList: string[] = sections?.advantages || [
-    '速度与效率：缩短研究与写作周期',
-    '隐私与安全：按需企业级选项',
-    '易于集成：第三方数据与工作流',
-    '体验友好：上手快、适合团队'
+    'Speed & efficiency: shorten research and writing cycles',
+    'Privacy & security: enterprise-grade options on demand',
+    'Easy integrations: third-party data & workflows',
+    'Delightful UX: fast onboarding, team-friendly'
   ];
 
   return (

@@ -1,7 +1,7 @@
 {
   "brand": {
     "nameCn": "Zhihang",
-    "nameEn": "Axiomate"
+    "nameEn": "Smarton"
   },
   "nav": {
     "home": "Home",
@@ -12,7 +12,7 @@
     "pricing": "Pricing",
     "useCases": "Use Cases",
     "testimonials": "Testimonials",
-    "signin": "Sign in"
+    "signin": "Login"
   },
   "home": {
     "heroTitle": "Your all-in-one AI assistant across leading models",

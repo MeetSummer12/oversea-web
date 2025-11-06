@@ -1,4 +1,4 @@
 export default {
-  locales: ['zh', 'en'],
-  defaultLocale: 'zh'
+  locales: ['en'],
+  defaultLocale: 'en'
 };

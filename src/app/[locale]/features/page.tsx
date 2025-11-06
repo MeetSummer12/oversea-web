@@ -9,62 +9,62 @@ export default function FeaturesPage() {
   const sections: Array<{id:string; title:string; desc?:string; bg:string; items:string[]; image?:string}> = [
     {
       id: 'multi-model',
-      title: mf?.multiModel?.title ?? '多模型协作',
-      desc: mf?.multiModel?.desc ?? '支持多模型并行与串联，针对不同任务智能路由',
+      title: mf?.multiModel?.title ?? 'Multi-model engine',
+      desc: mf?.multiModel?.desc ?? 'Parallel and chained models with smart routing per task',
       bg: 'section-indigo',
-      items: mf?.multiModel?.items || ['GPT-4 / o3', 'Claude', 'DeepSeek', '开源模型'],
+      items: mf?.multiModel?.items || ['GPT-4 / o3', 'Claude', 'DeepSeek', 'Open-source models'],
       image: '/images/brand/ai-mesh.svg'
     },
     {
       id: 'roles',
-      title: mf?.roles?.title ?? '智能角色与流程',
-      desc: mf?.roles?.desc ?? '可视化编排，支持触发器、条件与循环',
+      title: mf?.roles?.title ?? 'Custom roles & workflows',
+      desc: mf?.roles?.desc ?? 'Visual orchestration with triggers, conditions, loops',
       bg: 'section-slate',
-      items: mf?.roles?.items || ['Agent 编排', '对话上下文', '插件扩展'],
+      items: mf?.roles?.items || ['Agent orchestration', 'Conversation context', 'Plugin extensions'],
       image: '/images/brand/flow.svg'
     },
     {
       id: 'kb',
-      title: mf?.kb?.title ?? '知识库与检索',
-      desc: mf?.kb?.desc ?? '高质量向量化与分段策略，支持多数据源',
+      title: mf?.kb?.title ?? 'Knowledge base & retrieval',
+      desc: mf?.kb?.desc ?? 'High-quality embeddings, chunking strategies, multi-source',
       bg: 'section-teal',
-      items: mf?.kb?.items || ['PDF/网页/文档导入', '多嵌入模型', 'RAG 改写']
+      items: mf?.kb?.items || ['Import PDFs/pages/docs', 'Multiple embedding models', 'RAG rewriter']
     },
     {
       id: 'code',
-      title: mf?.code?.title ?? '代码与工具调用',
-      desc: mf?.code?.desc ?? '函数调用、Sandbox 执行与外部 API 集成',
+      title: mf?.code?.title ?? 'Code & tool calling',
+      desc: mf?.code?.desc ?? 'Function calls, sandbox execution, external API integrations',
       bg: 'section-indigo',
-      items: mf?.code?.items || ['Function Calling', '工具市场', '安全沙箱']
+      items: mf?.code?.items || ['Function Calling', 'Tool marketplace', 'Secure sandbox']
     },
     {
       id: 'content',
-      title: mf?.content?.title ?? '内容生成与多模态',
-      desc: mf?.content?.desc ?? '文本、图片、音频与视频的统一工作流',
+      title: mf?.content?.title ?? 'Content generation & multimodal',
+      desc: mf?.content?.desc ?? 'Unified workflow for text, images, audio, and video',
       bg: 'section-slate',
-      items: mf?.content?.items || ['文案生成', '图片编辑', '语音合成']
+      items: mf?.content?.items || ['Copywriting', 'Image editing', 'Speech synthesis']
     },
     {
       id: 'platforms',
-      title: mf?.platforms?.title ?? '平台与集成',
-      desc: mf?.platforms?.desc ?? 'SDK 与 Webhook，覆盖 Web/移动/企业内部系统',
+      title: mf?.platforms?.title ?? 'Platforms & integrations',
+      desc: mf?.platforms?.desc ?? 'SDKs & Webhooks across web, mobile, and enterprise systems',
       bg: 'section-teal',
       items: mf?.platforms?.items || ['Web SDK', 'CLI', 'Webhook']
     },
     {
       id: 'security',
-      title: mf?.security?.title ?? '安全与审计',
-      desc: mf?.security?.desc ?? '权限、配额与操作日志，企业级可观测性',
+      title: mf?.security?.title ?? 'Security & audit',
+      desc: mf?.security?.desc ?? 'Permissions, quotas, activity logs, enterprise observability',
       bg: 'section-indigo',
-      items: mf?.security?.items || ['细粒度权限', '流量配额', '审计日志']
+      items: mf?.security?.items || ['Fine-grained permissions', 'Traffic quotas', 'Audit logs']
     }
   ];
 
   return (
     <div className="space-y-12">
       <header className="text-center py-10">
-        <h1 className="text-3xl font-bold tracking-tight">{mf?.title ?? '功能一览'}</h1>
-        <p className="text-slate-600 mt-2">{mf?.subtitle ?? '以大色块呈现核心能力，简洁且具科技感'}</p>
+        <h1 className="text-3xl font-bold tracking-tight">{mf?.title ?? 'Feature overview'}</h1>
+        <p className="text-slate-600 mt-2">{mf?.subtitle ?? 'Large sections highlighting core capabilities, clean and modern'}</p>
       </header>
 
       {sections.map((sec) => (

@@ -1,13 +1,15 @@
 import type {Metadata} from 'next';
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import {getTranslations} from 'next-intl/server';
 import {NextIntlClientProvider} from 'next-intl';
+import {redirect} from 'next/navigation';
 import Nav from '@/components/Nav';
 import {locales, Locale} from '@/i18n/config';
 
 export const metadata: Metadata = {
-  title: 'Axiomate | 智航',
+  title: 'Smarton',
   description: 'All-in-one AI assistant across leading models.',
 };
 
@@ -20,7 +22,7 @@ async function getMessages(locale: Locale) {
     const messages = (await import(`@/messages/${locale}.json`)).default;
     return messages;
   } catch (e) {
-    const messages = (await import('@/messages/zh.json')).default;
+    const messages = (await import('@/messages/en.json')).default;
     return messages;
   }
 }
@@ -33,7 +35,11 @@ export default async function LocaleLayout({
   params: Promise<{locale: string}>;
 }) {
   const {locale: rawLocale} = await params;
-  const locale = isValidLocale(rawLocale) ? rawLocale : 'zh';
+  const locale = isValidLocale(rawLocale) ? rawLocale : 'en';
+  if (!isValidLocale(rawLocale)) {
+    // Redirect unknown locales to the canonical English path
+    redirect('/en');
+  }
   const messages = await getMessages(locale);
   const ft = await getTranslations({locale, namespace: 'footer'});
 
@@ -41,8 +47,9 @@ export default async function LocaleLayout({
     <NextIntlClientProvider locale={locale} messages={messages}>
       <header className="border-b border-slate-200 bg-white/80 backdrop-blur">
         <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
-          <Link href={`/${locale}`} className="font-semibold text-lg text-indigo-600">
-            Axiomate | 智航
+          <Link href={`/${locale}`} className="flex items-center gap-2 group">
+            <Image src="/logo-mark.svg" alt="Smarton" width={32} height={32} priority />
+            <span className="font-semibold text-lg text-indigo-600 group-hover:text-indigo-700">Smarton</span>
           </Link>
           <Nav locale={locale} />
         </div>

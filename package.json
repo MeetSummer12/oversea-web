@@ -9,6 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@clerk/localizations": "^3.27.0",
+    "@clerk/nextjs": "^6.34.4",
     "next": "16.0.1",
     "next-auth": "^4.24.13",
     "next-intl": "^4.4.0",

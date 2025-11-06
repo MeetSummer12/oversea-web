@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Axiomate | 智航 brand mark -->
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Axiomate brand mark">
+  <defs>
+    <linearGradient id="g-orbit" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="g-core" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Orbit ring -->
+  <ellipse cx="64" cy="64" rx="52" ry="24" fill="none" stroke="url(#g-orbit)" stroke-width="8" filter="url(#soft)"/>
+  <!-- Stylized A core -->
+  <path d="M64 18 L94 98 H86 L77 75 H51 L42 98 H34 L64 18 Z M57 67 H71 L64 49 Z" fill="url(#g-core)"/>
+  <!-- Small node on orbit to symbolize multi-model connectivity -->
+  <circle cx="106" cy="64" r="6" fill="#22d3ee" opacity="0.9"/>
+</svg>

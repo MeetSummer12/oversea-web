@@ -10,12 +10,12 @@ export default function PricingPage() {
   const locale = useLocale();
   return (
     <div className="mx-auto max-w-6xl px-4 py-12">
-      {/* 顶部大色块标题 */}
+      {/* Top colored header section */}
       <div className="section-block section-blue">
-        <h1 className="text-2xl md:text-3xl font-bold">{t('title', {default: '定价与方案 / Pricing'})}</h1>
-        <p className="mt-2 opacity-90">{t('subtitle', {default: '透明定价，免费试用，无需信用卡'})}</p>
-        <p className="mt-1 opacity-85">{t('tagline', {default: '灵活方案，聚焦前沿模型与生产力；按需升级，随时取消'})}</p>
-        {/* 计费周期切换：更和谐的排版与层次 */}
+        <h1 className="text-2xl md:text-3xl font-bold">{t('title', {default: 'Pricing'})}</h1>
+        <p className="mt-2 opacity-90">{t('subtitle', {default: 'Transparent pricing. Start free — no credit card'})}</p>
+        <p className="mt-1 opacity-85">{t('tagline', {default: 'Flexible plans focused on frontier models and productivity. Upgrade only when it makes sense'})}</p>
+        {/* Billing period switch */}
         <div className="mt-6">
           <div className="flex items-center gap-3">
             <p className="text-sm text-slate-600">{t('billing.label', {default: 'Billing'})}</p>
@@ -38,14 +38,14 @@ export default function PricingPage() {
           </div>
           <p className="mt-2 text-xs text-emerald-700">{t('billing.yearlySave', {default: 'Save with annual billing'})}</p>
         </div>
-        {/* 品牌图标：弱化视觉权重，避免与文案冲突 */}
+        {/* Brand icons, visually subtle to avoid conflicts with copy */}
         <div className="mt-6 flex items-center gap-3 opacity-80">
           <img src="/vercel.svg" alt="" aria-hidden="true" className="w-12 h-12" />
           <img src="/next.svg" alt="" aria-hidden="true" className="w-12 h-12" />
         </div>
       </div>
 
-      {/* 方案卡片 */}
+      {/* Plan cards */}
       <div className="mt-10 grid md:grid-cols-2 gap-6">
         {[
           { key: 'free', badgeClass: 'bg-sky-100 text-sky-700', tierLabel: tiers[0] ?? 'Free' },
@@ -54,10 +54,10 @@ export default function PricingPage() {
           const planMsg = messages?.pricing?.[plan.key] ?? {};
           const price = (billingPeriod==='yearly' ? planMsg?.priceYearly : planMsg?.priceMonthly) as string | undefined;
           const features = (planMsg?.features as string[] | undefined) ?? [
-            t('feature1', { default: '基础与前沿模型访问' }),
-            t('feature2', { default: '友好的每日限额与队列策略' }),
-            t('feature3', { default: '标准文档大小与上传数量限制' }),
-            t('feature4', { default: '知识库与自定义角色（按套餐限制）' }),
+            t('feature1', { default: 'Access to base and frontier models (subject to integrations)' }),
+            t('feature2', { default: 'Generous daily limits with fair queueing' }),
+            t('feature3', { default: 'Standard document size and upload limits' }),
+            t('feature4', { default: 'Knowledge-base and custom roles (plan-based limits)' }),
           ];
           const handleCheckout = async () => {
             try {
@@ -81,7 +81,7 @@ export default function PricingPage() {
             <div key={plan.key} className={`card ${plan.key==='pro' ? 'border-2 border-violet-300 shadow-lg relative' : ''}`}>
               {plan.key==='pro' && (
                 <div className="absolute -top-2 right-2 rounded px-2 py-0.5 text-xs bg-amber-100 text-amber-700">
-                  {t('recommended', {default: '推荐'})}
+                  {t('recommended', {default: 'Recommended'})}
                 </div>
               )}
               <div className={`rounded-lg px-3 py-1 text-xs inline-block ${plan.badgeClass}`}>{plan.tierLabel}</div>
@@ -89,7 +89,7 @@ export default function PricingPage() {
               <div className="mt-2 relative overflow-hidden">
                 <div className={`text-slate-900 font-semibold text-lg transition-all duration-300 ease-out ${billingPeriod==='monthly' ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'} absolute inset-0`}>{planMsg?.priceMonthly}</div>
                 <div className={`text-slate-900 font-semibold text-lg transition-all duration-300 ease-out ${billingPeriod==='yearly' ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'} absolute inset-0`}>{planMsg?.priceYearly}</div>
-                {/* 为了撑开容器高度，添加一个隐藏占位 */}
+                {/* Hidden placeholder to maintain container height */}
                 <div className="invisible text-lg">{planMsg?.priceMonthly || planMsg?.priceYearly}</div>
               </div>
               <ul className="mt-3 list-disc pl-5 text-slate-700 space-y-1">
@@ -101,7 +101,7 @@ export default function PricingPage() {
                 className="mt-4 btn-primary w-full"
                 onClick={plan.key==='pro' ? handleCheckout : undefined}
               >
-                {t('cta', { default: '开始使用' })}
+                {t('cta', { default: 'Get started' })}
               </button>
             </div>
           );
